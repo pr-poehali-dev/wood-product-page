@@ -7,47 +7,47 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const projects = [
     {
-      title: "Корпоративный веб-сайт",
-      description: "Разработка полнофункционального корпоративного сайта с CMS интеграцией",
-      tags: ["React", "TypeScript", "CMS"],
-      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/3e97772a-c80e-4ae8-87e0-984ba8ee4666.jpg"
+      title: "Corporate Website",
+      description: "Full-featured corporate website with modern design and CMS integration",
+      tags: ["React", "TypeScript", "Design"],
+      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/fb59af09-edf0-471d-be19-593331765719.jpg"
     },
     {
-      title: "E-commerce платформа",
-      description: "Создание масштабируемого интернет-магазина с системой оплаты",
-      tags: ["Next.js", "Stripe", "PostgreSQL"],
-      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/534e902d-457c-46b8-bde7-c9cb4ac35028.jpg"
+      title: "Mobile Application",
+      description: "Cross-platform mobile app with intuitive interface and real-time features",
+      tags: ["Mobile", "UI/UX", "Development"],
+      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/1f501e17-8bb1-486f-b30c-7523149954fd.jpg"
     },
     {
-      title: "Аналитическая панель",
-      description: "Разработка инструмента визуализации данных в реальном времени",
-      tags: ["React", "D3.js", "API"],
-      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/854d4b06-e0a5-4a7c-b482-21798b89d129.jpg"
+      title: "Analytics Dashboard",
+      description: "Real-time data visualization tool with advanced analytics capabilities",
+      tags: ["React", "Data", "API"],
+      image: "https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/fb59af09-edf0-471d-be19-593331765719.jpg"
     }
   ];
 
   const skills = [
-    { name: "Frontend разработка", level: 95 },
-    { name: "Backend интеграция", level: 88 },
-    { name: "UI/UX дизайн", level: 85 },
-    { name: "Архитектура систем", level: 90 }
+    { name: "Frontend Development", level: 95 },
+    { name: "Backend Integration", level: 88 },
+    { name: "UI/UX Design", level: 85 },
+    { name: "System Architecture", level: 90 }
   ];
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
+      <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
         <div className="container mx-auto px-6 py-6">
           <nav className="flex items-center justify-between">
-            <div className="text-xl font-semibold text-foreground">Портфолио</div>
+            <div className="text-xl font-semibold text-foreground">Portfolio</div>
             <div className="flex gap-8">
               <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Проекты
+                Projects
               </a>
               <a href="#skills" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Навыки
+                Skills
               </a>
               <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Контакты
+                Contact
               </a>
             </div>
           </nav>
@@ -55,34 +55,47 @@ const Index = () => {
       </header>
 
       <section className="container mx-auto px-6 py-32">
-        <div className="max-w-3xl animate-fade-in">
-          <h1 className="text-6xl font-bold text-foreground mb-6 leading-tight">
-            Разработка
-            <br />
-            цифровых продуктов
-          </h1>
-          <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-            Создаю масштабируемые веб-приложения с фокусом на качество кода,
-            производительность и пользовательский опыт.
-          </p>
-          <Button size="lg" className="text-base px-8">
-            Связаться
-          </Button>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-2xl">
+            <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Professional
+              <br />
+              Developer
+            </h1>
+            <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
+              Creating scalable web applications with focus on code quality,
+              performance, and exceptional user experience.
+            </p>
+            <div className="flex gap-4">
+              <Button size="lg" className="text-base px-8">
+                View Projects
+              </Button>
+              <Button size="lg" variant="outline" className="text-base px-8">
+                Contact Me
+              </Button>
+            </div>
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <img 
+              src="https://cdn.poehali.dev/projects/a31c3e85-acb4-4e4f-a868-eddb9cd6bb21/files/654797ee-4740-4d9d-b0af-ef74ef308a74.jpg" 
+              alt="Professional portrait"
+              className="rounded-lg w-full max-w-md object-cover shadow-xl"
+            />
+          </div>
         </div>
       </section>
 
       <section id="projects" className="container mx-auto px-6 py-24 bg-muted/30">
         <div className="mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Избранные проекты</h2>
-          <p className="text-lg text-muted-foreground">Примеры реализованных решений</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
+          <p className="text-lg text-muted-foreground">Selected works showcasing expertise</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-lg transition-all duration-300 animate-scale-in border-border"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group hover:shadow-lg transition-all duration-300 border-border overflow-hidden"
             >
               <CardContent className="p-0">
                 <div className="aspect-video bg-muted overflow-hidden">
@@ -117,15 +130,11 @@ const Index = () => {
       <section id="skills" className="container mx-auto px-6 py-24">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-16 text-center">
-            Ключевые компетенции
+            Core Competencies
           </h2>
           <div className="space-y-8">
             {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+              <div key={index}>
                 <div className="flex justify-between mb-3">
                   <span className="text-sm font-medium text-foreground">{skill.name}</span>
                   <span className="text-sm text-muted-foreground">{skill.level}%</span>
@@ -145,9 +154,9 @@ const Index = () => {
       <section id="contact" className="container mx-auto px-6 py-24 bg-muted/30">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Связаться</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
             <p className="text-lg text-muted-foreground">
-              Открыт к обсуждению новых проектов и сотрудничества
+              Open to discussing new projects and collaborations
             </p>
           </div>
 
@@ -156,11 +165,11 @@ const Index = () => {
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Имя
+                    Name
                   </label>
                   <Input
                     id="name"
-                    placeholder="Ваше имя"
+                    placeholder="Your name"
                     className="bg-background"
                   />
                 </div>
@@ -179,18 +188,18 @@ const Index = () => {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Сообщение
+                    Message
                   </label>
                   <Textarea
                     id="message"
-                    placeholder="Расскажите о вашем проекте"
+                    placeholder="Tell me about your project"
                     rows={6}
                     className="bg-background resize-none"
                   />
                 </div>
 
                 <Button type="submit" className="w-full" size="lg">
-                  Отправить сообщение
+                  Send Message
                 </Button>
               </form>
             </CardContent>
@@ -198,19 +207,23 @@ const Index = () => {
 
           <div className="mt-12 flex justify-center gap-6">
             <a
-              href="#"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-colors"
             >
               <Icon name="Github" size={20} />
             </a>
             <a
-              href="#"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-colors"
             >
               <Icon name="Linkedin" size={20} />
             </a>
             <a
-              href="#"
+              href="mailto:contact@example.com"
               className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-accent transition-colors"
             >
               <Icon name="Mail" size={20} />
@@ -219,11 +232,9 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="border-t border-border">
-        <div className="container mx-auto px-6 py-8">
-          <div className="text-center text-sm text-muted-foreground">
-            © 2024 Все права защищены
-          </div>
+      <footer className="border-t border-border py-8">
+        <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
+          © 2025 Professional Portfolio. All rights reserved.
         </div>
       </footer>
     </div>
